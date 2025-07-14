@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
+</head>
+<body>
+    
+  <header class="navbar">
+    <a href="#" class="logo" id="homeLogo">
+  <img src="./logo-page-0-removebg-preview.png" alt="VEDA SAMUDRA Logo" />
+</a>
+
+
+    <nav class="nav-links" id="navLinks"> 
+       <!-- <a href="#">Home</a>  -->
+       <a href="#Products">Products</a> 
+       <!-- <a href="#">Bulk orders </a>  -->
+        <!-- <a href="#" onclick="showBulkOrders()">Bulk orders</a>  -->
+        <li><a href="#" id="bulkOrdersBtn">Bulk orders</a></li>
+
+       <a href="#"> 
+  <!-- Bulk orders  -->
+   <i class="fas fa-shopping-cart"></i>
+  <span id="cart-count">0</span>
+</a>
+
+      
+    </nav>
+
+   
+    
+
+    <div class="hamburger" onclick="toggleMenu()">
+      ☰
+    </div>
+  </header>
+    <!-- <section class="hero">
+    <div class="hero-image">
+      <img src="./lord ganeshaa.png" alt="Lord Ganesh" />
+    </div>
+ 
+
+</section> -->
+  
+    <div class="image-gallery">
+      <div class="ganesha-card">
+        <img src="./ganesh1.jpg" alt="Ganesha 1" />
+      </div>
+      <div class="ganesha-card">
+        <img src="./ganesh2.jpeg" alt="Ganesha 2" />
+      </div>
+      <div class="ganesha-card">
+        <img src="./lord ganeshaa.png" alt="Ganesha 3" />
+      </div>
+    </div>
+  </main>
+
+
+
+  <!-- Bulk Order Section (initially hidden) -->
+  <section id="bulkOrderSection" class="hidden">
+    <div class="bulk-container">
+      <h2 class="bulk-title">🙏 <span>Bulk Order Services</span></h2>
+
+      <div class="form-container">
+        <h3>Request a Bulk Order</h3>
+        <form>
+          <div class="row">
+            <input type="text" placeholder="Your Name" required />
+            <input type="email" placeholder="Email Address" required />
+            <input type="text" placeholder="Organization / Event Name" />
+            <input type="number" placeholder="Quantity" required />
+          </div>
+          <input type="text" placeholder="Choose Item" class="full" required />
+          <textarea placeholder="Special Requirements (optional)"></textarea>
+          <button type="submit">🛍️ Submit Request</button>
+        </form>
+      </div>
+
+      <div class="order-table">
+        <h3>Your Bulk Orders</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Order Name</th>
+              <th>Quantity</th>
+              <th>Status</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>BULK001</td>
+              <td>Ganesh Chaturthi Kit - Mumbai</td>
+              <td>50</td>
+              <td><span class="badge processing">Processing</span></td>
+              <td>June 20, 2025</td>
+            </tr>
+            <tr>
+              <td>BULK002</td>
+              <td>Clay Ganesha Idols - School Event</td>
+              <td>100</td>
+              <td><span class="badge delivered">Delivered</span></td>
+              <td>June 10, 2025</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- page2 -->
+ 
+
+  <h2 class="slideshow-title">🌺 Our Top Selling Products 🔥</h2>
+<p class="description-text">
+  Welcome to our divine portal dedicated to Lord Ganesha — the remover of obstacles and the harbinger of good fortune. We offer all puja samagri and spiritual guidance to help devotees connect with Bappa.
+</p>
+
+
+<div class="frame-slideshow-wrapper">
+  <div class="frame-slide-track">
+    <img src="./ganesh2.jpeg" alt="Ganesh 1" class="frame-slide-image" />
+  </div>
+</div>
+
+
+  <!-- page3 -->
+   <h1 id="Products" class="store-heading">❁ Veda Samudra Divine Store ❁</h1>
+
+  <!-- Product Grid -->
+  <div class="product-grid">
+
+    <!-- Repeat this block 20 times (already done below) -->
+    <div class="product-card">
+      <img src="./ganesh2.jpeg" alt="Ganesh Idol 1">
+      
+      <span class="price">₹499</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+      
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+      
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+      
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+     
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+      
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+     
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+      
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+      
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+      
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+      
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+     
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+   
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+     
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+      
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+      
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+  
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+    
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+     
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+    <div class="product-card">
+      <img src="./ganesh1.jpg" alt="Ganesh Idol 2">
+     
+      <span class="price">₹799</span>
+      <button class="buy-btn">Buy Now</button>
+    </div>
+
+
+
+  </div>
+
+
+  <!-- footer -->
+
+  <footer class="footer">
+  <div class="footer-container">
+
+    <!-- About Us -->
+    <div class="footer-box">
+      <h3><i class="fas fa-spa"></i> About Us</h3>
+      <p>
+        Veda Samudra is your trusted source for eco-friendly Ganesh idols, puja kits, and festive essentials.
+        We build spiritually themed, responsive websites using MERN stack.
+      </p>
+    </div>
+
+    <!-- Useful Links -->
+    <div class="footer-box">
+      <h3><i class="fas fa-link"></i> Useful Links</h3>
+      <ul>
+        <!-- <li>Home</li> -->
+        <!-- <li>About</li> -->
+        <li><a href="">Products</a></li>
+        <li><a href="">Cart</a></li>
+        <li><a href="">Contact</a></li>
+       
+        <li><a href="./privacy.html">Privacy Policy</a></li>
+    <li><a href="./terms.html">Terms & Conditions</a></li>
+    <li><a href="./refund.html">Refund Policy</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact Info -->
+    <div class="footer-box">
+      <h3><i class="fas fa-phone"></i> Contact Info</h3>
+      <p>vedasamudraindia@gmail.com</p>
+      <p>Hyderabad, India</p>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="footer-box">
+      <h3><i class="fas fa-flag"></i> Contact Us</h3>
+      <form class="footer-form">
+        <input type="email" placeholder="Your Email" required />
+        <input type="tel" placeholder="Your Phone Number" required />
+        <textarea placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+  </div>
+
+  <hr />
+  <p class="footer-bottom">© 2025 GaneshStore. All rights reserved.</p>
+</footer>
+
+
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>
